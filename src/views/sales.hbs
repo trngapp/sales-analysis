@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      .salesAnalysis {
+        text-align: center;
+        width: 90%;
+        border: 2px solid grey;
+        margin: auto;
+        margin-top: 50px;
+        background-color: brown;
+        color: white;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      }
+      .data {
+        justify-content: center;
+        margin: auto;
+      }
+      label {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: left;
+        width: 400px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      input {
+        height: 20px;
+        flex: 0 0 200px;
+        margin-left: 10px;
+      }
+      select {
+        width: 60px;
+        height: max-content;
+        margin: 5px;
+      }
+
+      button {
+        background-color: blueviolet;
+        color: white;
+        height: 30px;
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <a  class="navlink" href="/" ><button>Home</button> </a>
+    <section id="salesAnalysis" class="salesAnalysis">
+      <h1>Sales Analysis</h1>
+      <div class="graph">
+        <h3>Graph will be here</h3>
+      </div>
+      <div class="formdiv">
+
+        <br>
+          <div class="data">
+            <label
+              >TOTAL REVENUE:   </label>
+              <output>Total is</output>
+               <output> {%total%}</output>
+              <form action="/totalrevenue" method="GET">
+              <select name="gender" id="revenue">
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="total">Total</option>
+              </select>
+              <button>Find</button>
+              </form>
+
+          </div>
+<br>
+<br>
+          <div class="data">
+            <label
+              >TOTAL TODAY REVENUE</label>
+              <output>Total wil be shown</output>
+               <output> {%today%}</output>
+              <form action="/totaltoday" method="GET">
+              <select name="gender" id="todayrevenue">
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="total">Total</option>
+              </select>
+              <button>Find</button>
+              </form>
+
+          </div>
+<br>
+<br>
+          <div class="data">
+            <label >TOP SELLING SHOE</label>
+            <output>ans is=</output>
+              <h1> {%top%}</h1>
+              <form action="/topsell" method="GET">
+              <select name="gender" id="topselling">
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="total">Total</option>
+              </select>
+              <button>Find</button>
+              </form>
+
+          </div>
+<br>
+<br>
+          <div class="data">
+            <label
+              >STATUS OF SALES TARGET </label>
+              <output>Status wil be shown</output>
+               <output>{%status%}</output>
+              <form action="status" method="GET">
+              <select name="time">
+                <option value="month">This month</option>
+                <option value="year">This Year</option>
+              </select>
+              <button>Find</button>
+              </form>
+
+
+          </div>
+
+
+          <div class="data">
+            <label
+              >ADD NEW SALES TARGET </label>
+              <form action="/addtarget" method="POST">
+              <input type="number" name="target" id="target" />
+              <select name="time">
+                <option value="month"> New month</option>
+                <option value="year">New Year</option>
+              </select>
+              <button>Add</button>
+              </form>
+
+          </div>
+
+
+      </div>
+    </section>
+  </body>
+</html>

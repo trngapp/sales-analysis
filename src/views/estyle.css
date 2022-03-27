@@ -1,0 +1,139 @@
+body{    background: rgb(231, 231, 229);
+font-family: 'Courier New', Courier, monospace ;}
+h1{
+    font-size: 40px;
+}
+nav{
+
+    width:auto;
+    height: 120px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 2px;
+    margin-bottom: 0px;
+    color: brown;
+    background: linear-gradient(160deg,rgb(142, 253, 253),rgb(40, 175, 228));
+    box-shadow:5px 5px  grey;
+    position: sticky;
+    top:10px;
+}
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:hover{
+    color: goldenrod;
+}
+.acc{
+    display: flex;
+    flex-direction:row;
+}
+.register{
+    text-align: right;
+}
+
+.navbar{
+    margin:  auto;
+    display: block;
+    align-content: center;
+    padding-top: 1px;
+    padding-bottom: 8px;
+}
+.navlink{
+    text-align: center;
+    padding-left: 10px;
+
+}
+.front{
+    display: flex;
+    flex-direction: row;
+    box-shadow:5px 5px 5px grey;
+    width:95%;
+    margin: auto;
+    margin-top: 50px;
+    background: linear-gradient(160deg,rgb(142, 253, 253),rgb(40, 175, 228));
+    color:rgb(187, 9, 39);
+
+}
+.shoeimage{
+    width: 50%;
+    margin-right: 0px;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+.shoedesc{
+    width: 50%;
+    padding-top: 100px;
+    text-align: left;
+    justify-content: left;
+
+}
+.shopnowbutton{
+    height: 40px;
+    width:100px;
+    
+}
+.shopsec{
+    width: 90%;
+    margin:auto;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(160deg,rgb(142, 253, 253),rgb(40, 175, 228));
+    color: chocolate;
+    font-style: italic;
+    font-weight: bolder;
+    box-shadow:5px 5px 5px grey;
+   
+}
+.Shop{
+    display: flex;
+    flex-direction: column;
+
+}
+.Men,.Women{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+.shoe{
+    width: 22%;
+    height: 250px;
+    margin: auto;
+    justify-content: center;
+}
+
+img{
+    width: 70%;
+    justify-content: center;
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 250px;
+    border: 2px solid #888888 ;
+    margin-top: 3px;
+}
+.frontimg{
+    width: 120%;
+    height: 120%;
+    margin-right: 0%;
+    justify-content: right;
+    border: none;
+}
+.shopbutton{    padding-left: 70px;
+    padding-top: 20px;
+   
+
+}
+button{background-color: blueviolet;
+color: white;
+border: 2px solid white;
+box-shadow: 4px 4px black;}
